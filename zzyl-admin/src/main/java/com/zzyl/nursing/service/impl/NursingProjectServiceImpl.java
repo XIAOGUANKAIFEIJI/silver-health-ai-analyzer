@@ -11,8 +11,6 @@ import com.zzyl.nursing.service.INursingProjectService;
 /**
  * 护理项目Service业务层处理
  * 
- * @author ruoyi
- * @date 2025-10-18
  */
 @Service
 public class NursingProjectServiceImpl implements INursingProjectService 

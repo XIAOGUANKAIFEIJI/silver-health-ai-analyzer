@@ -24,8 +24,6 @@ import com.zzyl.common.core.page.TableDataInfo;
 /**
  * 护理项目Controller
  * 
- * @author ruoyi
- * @date 2025-10-18
  */
 @RestController
 @RequestMapping("/nursing/project")

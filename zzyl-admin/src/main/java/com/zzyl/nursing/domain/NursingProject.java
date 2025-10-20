@@ -9,8 +9,6 @@ import com.zzyl.common.core.domain.BaseEntity;
 /**
  * 护理项目对象 nursing_project
  * 
- * @author ruoyi
- * @date 2025-10-18
  */
 public class NursingProject extends BaseEntity
 {
@@ -25,7 +23,6 @@ public class NursingProject extends BaseEntity
 
     /** 排序号 */
     @Excel(name = "排序号")
-    private Long orderNo;
 
     /** 单位 */
     @Excel(name = "单位")
@@ -65,12 +62,10 @@ public class NursingProject extends BaseEntity
     {
         return name;
     }
-    public void setOrderNo(Long orderNo) 
     {
         this.orderNo = orderNo;
     }
 
-    public Long getOrderNo() 
     {
         return orderNo;
     }
