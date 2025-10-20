@@ -36,7 +36,12 @@
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
-
+            <!-- zzyl-nursing-platform业务模块-->
+            <dependency>
+                <groupId>com.zzyl</groupId>
+                <artifactId>zzyl-nursing-platform</artifactId>
+                <version>${zzyl.version}</version>
+            </dependency>
             <!-- SpringFramework的依赖配置-->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -192,6 +197,7 @@
         <module>zzyl-quartz</module>
         <module>zzyl-generator</module>
         <module>zzyl-common</module>
+        <module>zzyl-nursing-platform</module>
     </modules>
     <packaging>pom</packaging>
 
