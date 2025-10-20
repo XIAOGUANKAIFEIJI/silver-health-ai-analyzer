@@ -16,6 +16,11 @@
     </description>
 
     <dependencies>
+        <!-- 护理业务模块-->
+        <dependency>
+            <groupId>com.zzyl</groupId>
+            <artifactId>zzyl-nursing-platform</artifactId>
+        </dependency>
 
         <!-- spring-boot-devtools -->
         <dependency>
