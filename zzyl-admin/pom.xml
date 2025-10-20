@@ -17,8 +17,12 @@
 
     <dependencies>
 
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-devtools</artifactId>
+        <!-- spring-boot-devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional> <!-- 表示依赖不会传递 -->
+        </dependency>
 
         <!-- swagger3-->
         <dependency>
@@ -33,7 +37,7 @@
             <version>1.6.2</version>
         </dependency>
 
-        <!-- Mysql驱动包 -->
+         <!-- Mysql驱动包 -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -51,10 +55,17 @@
             <artifactId>zzyl-quartz</artifactId>
         </dependency>
 
+
         <!-- 代码生成-->
         <dependency>
             <groupId>com.zzyl</groupId>
             <artifactId>zzyl-generator</artifactId>
+        </dependency>
+        <!-- ruoyi-springboot2 / swagger knife4j 配置 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
         </dependency>
 
     </dependencies>
@@ -76,15 +87,15 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.1.0</version>
+            <plugin>   
+                <groupId>org.apache.maven.plugins</groupId>   
+                <artifactId>maven-war-plugin</artifactId>   
+                <version>3.1.0</version>   
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <warName>${project.artifactId}</warName>
-                </configuration>
-            </plugin>
+                </configuration>   
+           </plugin>   
         </plugins>
         <finalName>${project.artifactId}</finalName>
     </build>

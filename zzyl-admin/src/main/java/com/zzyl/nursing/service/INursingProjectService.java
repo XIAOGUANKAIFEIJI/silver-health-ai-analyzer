@@ -6,6 +6,8 @@ import com.zzyl.nursing.domain.NursingProject;
 /**
  * 护理项目Service接口
  * 
+ * @author ruoyi
+ * @date 2025-10-18
  */
 public interface INursingProjectService 
 {
